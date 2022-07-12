@@ -18,7 +18,7 @@ const ExpenseForm = (props) => {
 
     const expenseData = {
       title: title,
-      amount: amount,
+      amount: parseFloat(amount),
       date: new Date(date),
     };
 

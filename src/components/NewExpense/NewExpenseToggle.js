@@ -3,7 +3,7 @@ const NewExpenseToggle = (props) => {
   const toggleState = (callback) => callback((prevState) => !prevState);
   const showFormHandler = (e) => {
     e.preventDefault();
-    toggleState(props.onShowForm || props.onCancelForm);
+    toggleState(props.onShowForm ?? props.onCancelForm);
   };
   const text = props.text;
 
